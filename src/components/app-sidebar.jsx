@@ -8,7 +8,6 @@ import {
   FileCode2,
   FileText,
   FileType,
-  Folder,
   CircleHelp,
   Layers,
   ListChecks,
@@ -16,6 +15,7 @@ import {
   Search,
   Settings,
   Users,
+  Trophy,
 } from "lucide-react";
 
 import {
@@ -33,33 +33,33 @@ import { NavUser } from "./nav-user";
 
 const data = {
   user: {
-    name: "shadcn",
+    name: "usuário",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/avatar/shadcn.jpg",
   },
   navMain: [
     {
-      title: "Dashboard",
+      title: "Início",
       url: "#",
       icon: LayoutDashboard,
     },
     {
-      title: "Lifecycle",
+      title: "Meus Links",
       url: "#",
       icon: ListChecks,
     },
     {
-      title: "Analytics",
+      title: "Estatísticas",
       url: "#",
       icon: ChartBar,
     },
     {
-      title: "Projects",
+      title: "Ranking",
       url: "#",
-      icon: Folder,
+      icon: Trophy,
     },
     {
-      title: "Team",
+      title: "Usuários",
       url: "#",
       icon: Users,
     },
@@ -160,7 +160,7 @@ export function AppSidebar({ ...props }) {
             >
               <a href="#">
                 <Layers className="size-5!" />
-                <span className="text-base font-semibold">Acme Inc.</span>
+                <span className="text-base font-semibold">PasseCurto</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
